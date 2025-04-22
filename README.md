@@ -168,16 +168,17 @@ Process 7 กระบวนการรายงานสถิติ
 แฟ้มที่เกี่ยวข้อง		-
 ตารางแสดงรายละเอียดข้อมูลผู้ใช้งานระบบ
 
-ลำดับ (NO)	คุณสมบัติ (Attribute)	คำอธิบาย (Description)	ประเภท (Type)	ขนาด (Width)	ประเภทคีย์ (Key Type)
-1	user_id	รหัสผู้ใช้งาน	int	10	PK
-2	username	ชื่อผู้ใช้งาน	varchar	50	
-3	password	รหัสผ่าน	varchar	255	
-4	email	อีเมล	varchar	100	
-5	first_name	ชื่อจริง	varchar	50	
-6	last_name	นามสกุล	varchar	50	
-7	phone	เบอร์โทรศัพท์	varchar	20	
-8	created_at	วันที่สร้างบัญชี	datetime	-	
-9	updated_at	วันที่อัปเดตล่าสุด	datetime	-	
+| ลำดับ (NO) | คุณสมบัติ (Attribute) | คำอธิบาย (Description) | ประเภท (Type) | ขนาด (Width) | ประเภทคีย์ (Key Type) |
+|------------|:----------------------:|:-----------------------:|:-------------:|:-------------:|:----------------------:|
+| 1          | user_id               | รหัสผู้ใช้งาน            | int           | 10          | PK                     |
+| 2          | username               | ชื่อผู้ใช้งาน            | varchar       | 50          |                          |
+| 3          | password               | รหัสผ่าน                | varchar       | 255         |                          |
+| 4          | email                  | อีเมล                  | varchar       | 100         |                          |
+| 5          | first_name            | ชื่อจริง                | varchar       | 50          |                          |
+| 6          | last_name             | นามสกุล                | varchar       | 50          |                          |
+| 7          | phone                  | เบอร์โทรศัพท์            | varchar       | 20          |                          |
+| 8          | created_at            | วันที่สร้างบัญชี        | datetime      | -           |                          |
+| 9          | updated_at            | วันที่อัปเดตล่าสุด      | datetime      | -           |                          |-	
 ตารางที่ 3.2 แสดงรายละเอียดข้อมูลผู้ใช้งานระบบ
 
 
