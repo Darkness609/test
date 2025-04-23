@@ -198,17 +198,18 @@ Process 7 กระบวนการรายงานสถิติ
 แฟ้มที่เกี่ยวข้อง		-
 ใช้เก็บข้อมูลแผนการท่องเที่ยว
 
-ลำดับ (NO)	คุณสมบัติ (Attribute)	คำอธิบาย (Description)	ประเภท (Type)	ขนาด (Width)	ประเภทคีย์ (Key Type)
-1	plan_id	รหัสแผนการท่องเที่ยว	int	10	PK
-2	user_id	รหัสผู้ใช้งาน	int	10	FK
-3	plan_name	ชื่อแผนการท่องเที่ยว	varchar	100	
-4	start_date	วันที่เริ่มต้น	date	-	
-5	end_date	วันที่สิ้นสุด	date	-	
-6	budget	งบประมาณ	decimal	10,2	
-7	description	รายละเอียดแผน	text	-	
-8	status	สถานะแผน	varchar	20	
-9	created_at	วันที่สร้างแผน	datetime	-	
-10	updated_at	วันที่อัปเดตล่าสุด	datetime	-	
+| ลำดับ (NO) | คุณสมบัติ (Attribute) | คำอธิบาย (Description) | ประเภท (Type) | ขนาด (Width) | ประเภทคีย์ (Key Type) |
+|------------|:----------------------:|:-----------------------:|:-------------:|:-------------:|:----------------------:|
+| 1          | plan_id               | รหัสแผนการท่องเที่ยว    | int           | 10          | PK                     |
+| 2          | user_id               | รหัสผู้ใช้งาน            | int           | 10          | FK                     |
+| 3          | plan_name            | ชื่อแผนการท่องเที่ยว    | varchar       | 100         |                          |
+| 4          | start_date            | วันที่เริ่มต้น            | date          | -           |                          |
+| 5          | end_date              | วันที่สิ้นสุด            | date          | -           |                          |
+| 6          | budget                 | งบประมาณ                | decimal       | 10,2        |                          |
+| 7          | description            | รายละเอียดแผน          | text          | -           |                          |
+| 8          | status                 | สถานะแผน              | varchar       | 20          |                          |
+| 9          | created_at            | วันที่สร้างแผน          | datetime      | -           |                          |
+| 10         | updated_at            | วันที่อัปเดตล่าสุด      | datetime      | -           |                          |
 
 ตารางที่ 3.3 แสดงรายละเอียดข้อมูลแผนการท่องเที่ยว
 
@@ -222,18 +223,19 @@ Process 7 กระบวนการรายงานสถิติ
 แฟ้มที่เกี่ยวข้อง		-
 ตารางแสดงรายละเอียดข้อมูลสถานที่ท่องเที่ยว
 
-ลำดับ (NO)	คุณสมบัติ (Attribute)	คำอธิบาย (Description)	ประเภท (Type)	ขนาด (Width)	ประเภทคีย์ (Key Type)
-1	place_id	รหัสสถานที่	int	10	PK
-2	place_name	ชื่อสถานที่	varchar	100	
-3	category	ประเภทสถานที่	varchar	50	
-4	latitude	ละติจูด	decimal	10,6	
-5	longitude	ลองจิจูด	decimal	10,6	
-6	address	ที่อยู่	varchar	200	
-7	description	รายละเอียด	text	-	
-8	entrance_fee	ค่าเข้าชม	decimal	10,2	
-9	opening_hours	เวลาทำการ	varchar	100	
-10	rating	คะแนนรีวิว	decimal	3,2	
-11	image_url	URL รูปภาพ	varchar	255	
+| ลำดับ (NO) | คุณสมบัติ (Attribute) | คำอธิบาย (Description) | ประเภท (Type) | ขนาด (Width) | ประเภทคีย์ (Key Type) |
+|------------|:----------------------:|:-----------------------:|:-------------:|:-------------:|:----------------------:|
+| 1          | place_id              | รหัสสถานที่             | int           | 10          | PK                     |
+| 2          | place_name            | ชื่อสถานที่             | varchar       | 100         |                          |
+| 3          | category               | ประเภทสถานที่           | varchar       | 50          |                          |
+| 4          | latitude               | ละติจูด                | decimal       | 10,6        |                          |
+| 5          | longitude              | ลองจิจูด              | decimal       | 10,6        |                          |
+| 6          | address                | ที่อยู่                  | varchar       | 200         |                          |
+| 7          | description            | รายละเอียด              | text          | -           |                          |
+| 8          | entrance_fee           | ค่าเข้าชม              | decimal       | 10,2        |                          |
+| 9          | opening_hours         | เวลาทำการ              | varchar       | 100         |                          |
+| 10         | rating                 | คะแนนรีวิว              | decimal       | 3,2         |                          |
+| 11         | image_url             | URL รูปภาพ            | varchar       | 255         |                          |
 
 ตารางที่ 3.4 แสดงรายละเอียดข้อมูลสถานที่ท่องเที่ยว
 
@@ -244,18 +246,20 @@ Process 7 กระบวนการรายงานสถิติ
 วัตถุประสงค์ 		ใช้เก็บข้อมูลที่พัก
 แฟ้มที่เกี่ยวข้อง		-
 ตารางแสดงรายละเอียดข้อมูลที่พัก
-ลำดับ (NO)	คุณสมบัติ (Attribute)	คำอธิบาย (Description)	ประเภท (Type)	ขนาด (Width)	ประเภทคีย์ (Key Type)
-1	accommodation_id	รหัสที่พัก	int	10	PK
-2	name	ชื่อที่พัก	varchar	100	
-3	type	ประเภทที่พัก	varchar	50	
-4	price_per_night	ราคาต่อคืน	decimal	10,2	
-5	latitude	ละติจูด	decimal	10,6	
-6	longitude	ลองจิจูด	decimal	10,6	
-7	address	ที่อยู่	varchar	200	
-8	description	รายละเอียด	text	-	
-9	rating	คะแนนรีวิว	decimal	3,2	
-10	facilities	สิ่งอำนวยความสะดวก	text	-	
-11	image_url	URL รูปภาพ	varchar	255	
+
+| ลำดับ (NO) | คุณสมบัติ (Attribute) | คำอธิบาย (Description) | ประเภท (Type) | ขนาด (Width) | ประเภทคีย์ (Key Type) |
+|------------|:----------------------:|:-----------------------:|:-------------:|:-------------:|:----------------------:|
+| 1          | accommodation_id     | รหัสที่พัก               | int           | 10          | PK                     |
+| 2          | name                 | ชื่อที่พัก               | varchar       | 100         |                          |
+| 3          | type                 | ประเภทที่พัก             | varchar       | 50          |                          |
+| 4          | price_per_night      | ราคาต่อคืน             | decimal       | 10,2        |                          |
+| 5          | latitude             | ละติจูด                | decimal       | 10,6        |                          |
+| 6          | longitude            | ลองจิจูด              | decimal       | 10,6        |                          |
+| 7          | address              | ที่อยู่                  | varchar       | 200         |                          |
+| 8          | description          | รายละเอียด              | text          | -           |                          |
+| 9          | rating               | คะแนนรีวิว              | decimal       | 3,2         |                          |
+| 10         | facilities           | สิ่งอำนวยความสะดวก       | text          | -           |                          |
+| 11         | image_url            | URL รูปภาพ            | varchar       | 255         |                          |
 
 ตารางที่ 3.5 แสดงรายละเอียดข้อมูลที่พัก
 
@@ -268,15 +272,18 @@ Process 7 กระบวนการรายงานสถิติ
 วัตถุประสงค์ 		ใช้เก็บข้อมูลที่พัก
 แฟ้มที่เกี่ยวข้อง		-
 ตารางแสดงรายละเอียดข้อมูลกิจกรรมการท่องเที่ยว
-ลำดับ (NO)	คุณสมบัติ (Attribute)	คำอธิบาย (Description)	ประเภท (Type)	ขนาด (Width)	ประเภทคีย์ (Key Type)
-1	activity_id	รหัสกิจกรรม	int	10	PK
-2	place_id	รหัสสถานที่	int	10	FK
-3	activity_name	ชื่อกิจกรรม	varchar	100	
-4	description	รายละเอียด	text	-	
-5	duration	ระยะเวลา (นาที)	int	10	
-6	price	ราคา	decimal	10,2	
-7	category	ประเภทกิจกรรม	varchar	50	
-8	rating	คะแนนรีวิว	decimal	3,2	
+
+| ลำดับ (NO) | คุณสมบัติ (Attribute) | คำอธิบาย (Description) | ประเภท (Type) | ขนาด (Width) | ประเภทคีย์ (Key Type) |
+|------------|:----------------------:|:-----------------------:|:-------------:|:-------------:|:----------------------:|
+| 1          | activity_id          | รหัสกิจกรรม             | int           | 10          | PK                     |
+| 2          | place_id             | รหัสสถานที่             | int           | 10          | FK                     |
+| 3          | activity_name        | ชื่อกิจกรรม             | varchar       | 100         |                          |
+| 4          | description          | รายละเอียด              | text          | -           |                          |
+| 5          | duration             | ระยะเวลา (นาที)         | int           | 10          |                          |
+| 6          | price                | ราคา                    | decimal       | 10,2        |                          |
+| 7          | category             | ประเภทกิจกรรม           | varchar       | 50          |                          |
+| 8          | rating               | คะแนนรีวิว              | decimal       | 3,2         |                          |
+
 ตารางที่ 3.6 แสดงรายละเอียดข้อมูลกิจกรรมการท่องเที่ยว
 
 
@@ -293,15 +300,18 @@ Process 7 กระบวนการรายงานสถิติ
 วัตถุประสงค์ 		ใช้เก็บข้อมูลการเดินทาง
 แฟ้มที่เกี่ยวข้อง		-
 ตารางแสดงรายละเอียดข้อมูลการเดินทาง
-ลำดับ (NO)	คุณสมบัติ (Attribute)	คำอธิบาย (Description)	ประเภท (Type)	ขนาด (Width)	ประเภทคีย์ (Key Type)
-1	transport_id	รหัสการเดินทาง	int	10	PK
-2	type	ประเภทการเดินทาง	varchar	50	
-3	from_place_id	รหัสสถานที่ต้นทาง	int	10	FK
-4	to_place_id	รหัสสถานที่ปลายทาง	int	10	FK
-5	duration	ระยะเวลา (นาที)	int	10	
-6	distance	ระยะทาง (กม.)	decimal	10,2	
-7	price	ราคา	decimal	10,2	
-8	description	รายละเอียด	text	-	
+
+| ลำดับ (NO) | คุณสมบัติ (Attribute) | คำอธิบาย (Description) | ประเภท (Type) | ขนาด (Width) | ประเภทคีย์ (Key Type) |
+|------------|:----------------------:|:-----------------------:|:-------------:|:-------------:|:----------------------:|
+| 1          | transport_id         | รหัสการเดินทาง           | int           | 10          | PK                     |
+| 2          | type                 | ประเภทการเดินทาง         | varchar       | 50          |                          |
+| 3          | from_place_id        | รหัสสถานที่ต้นทาง       | int           | 10          | FK                     |
+| 4          | to_place_id          | รหัสสถานที่ปลายทาง       | int           | 10          | FK                     |
+| 5          | duration             | ระยะเวลา (นาที)         | int           | 10          |                          |
+| 6          | distance             | ระยะทาง (กม.)           | decimal       | 10,2        |                          |
+| 7          | price                | ราคา                    | decimal       | 10,2        |                          |
+| 8          | description          | รายละเอียด              | text          | -           |                          |
+
 ตารางที่ 3.7 แสดงรายละเอียดข้อมูลการเดินทาง
 
 
@@ -317,13 +327,16 @@ Process 7 กระบวนการรายงานสถิติ
 วัตถุประสงค์ 		ใช้เก็บข้อมูลความสนใจของผู้ใช้
 แฟ้มที่เกี่ยวข้อง		-
 ตารางแสดงรายละเอียดข้อมูลความสนใจของผู้ใช้
-ลำดับ (NO)	คุณสมบัติ (Attribute)	คำอธิบาย (Description)	ประเภท (Type)	ขนาด (Width)	ประเภทคีย์ (Key Type)
-1	interest_id	รหัสความสนใจ	int	10	PK
-2	user_id	รหัสผู้ใช้งาน	int	10	FK
-3	category	ประเภทความสนใจ	varchar	50	
-4	preference_level	ระดับความสนใจ	int	5	
-5	created_at	วันที่สร้าง	datetime	-	
-6	updated_at	วันที่อัปเดตล่าสุด	datetime	-	
+
+| ลำดับ (NO) | คุณสมบัติ (Attribute) | คำอธิบาย (Description) | ประเภท (Type) | ขนาด (Width) | ประเภทคีย์ (Key Type) |
+|------------|:----------------------:|:-----------------------:|:-------------:|:-------------:|:----------------------:|
+| 1          | interest_id          | รหัสความสนใจ            | int           | 10          | PK                     |
+| 2          | user_id              | รหัสผู้ใช้งาน            | int           | 10          | FK                     |
+| 3          | category             | ประเภทความสนใจ          | varchar       | 50          |                          |
+| 4          | preference_level     | ระดับความสนใจ          | int           | 5           |                          |
+| 5          | created_at           | วันที่สร้าง              | datetime      | -           |                          |
+| 6          | updated_at           | วันที่อัปเดตล่าสุด      | datetime      | -           |                          |
+
 ตารางที่ 3.8 แสดงรายละเอียดข้อมูลความสนใจของผู้ใช้
 
 
@@ -343,18 +356,21 @@ Process 7 กระบวนการรายงานสถิติ
 วัตถุประสงค์ 		ใช้เก็บข้อมูลรายละเอียดแผนการท่องเที่ยว
 แฟ้มที่เกี่ยวข้อง		-
 ตารางแสดงรายละเอียดข้อมูลรายละเอียดแผนการท่องเที่ยว
-ลำดับ (NO)	คุณสมบัติ (Attribute)	คำอธิบาย (Description)	ประเภท (Type)	ขนาด (Width)	ประเภทคีย์ (Key Type)
-1	detail_id	รหัสรายละเอียด	int	10	PK
-2	plan_id	รหัสแผนการท่องเที่ยว	int	10	FK
-3	day_number	วันที่	int	5	
-4	sequence	ลำดับกิจกรรม	int	5	
-5	place_id	รหัสสถานที่	int	10	FK
-6	activity_id	รหัสกิจกรรม	int	10	FK
-7	accommodation_id	รหัสที่พัก	int	10	FK
-8	transport_id	รหัสการเดินทาง	int	10	FK
-9	start_time	เวลาเริ่มต้น	time	-	
-10	end_time	เวลาสิ้นสุด	time	-	
-11	notes	บันทึกเพิ่มเติม	text	-	
+
+| ลำดับ (NO) | คุณสมบัติ (Attribute) | คำอธิบาย (Description) | ประเภท (Type) | ขนาด (Width) | ประเภทคีย์ (Key Type) |
+|------------|:----------------------:|:-----------------------:|:-------------:|:-------------:|:----------------------:|
+| 1          | detail_id            | รหัสรายละเอียด          | int           | 10          | PK                     |
+| 2          | plan_id              | รหัสแผนการท่องเที่ยว    | int           | 10          | FK                     |
+| 3          | day_number           | วันที่                  | int           | 5           |                          |
+| 4          | sequence             | ลำดับกิจกรรม            | int           | 5           |                          |
+| 5          | place_id             | รหัสสถานที่             | int           | 10          | FK                     |
+| 6          | activity_id          | รหัสกิจกรรม             | int           | 10          | FK                     |
+| 7          | accommodation_id     | รหัสที่พัก               | int           | 10          | FK                     |
+| 8          | transport_id         | รหัสการเดินทาง           | int           | 10          | FK                     |
+| 9          | start_time           | เวลาเริ่มต้น            | time          | -           |                          |
+| 10         | end_time             | เวลาสิ้นสุด            | time          | -           |                          |
+| 11         | notes                | บันทึกเพิ่มเติม          | text          | -           |                          |
+
 ตารางที่ 3.9 แสดงรายละเอียดข้อมูลรายละเอียดแผนการท่องเที่ยว
 
 
